@@ -16,8 +16,8 @@ public class ExColis {
     public static void main(String[] args) {
         Adresse adresse1 = new Adresse ("31","31100"," Toulouse", "France");
         System.out.println(adresse1.estenFrance());
-        
-        Adresse adresse2 = new Adresse ("31", "21", "Alger", "Algerie");
-        System.out.println(adresse2.estenFrance());
-    }
-}
+       
+    
+    Pointdelivraison mirailU= new Pointdelivraison("mirail", adresse1);
+    Colis colis1= new Colis(500, "Benameur", adresse1 , mirailU);
+}}
