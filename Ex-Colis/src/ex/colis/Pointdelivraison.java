@@ -4,19 +4,24 @@
  */
 package ex.colis;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Kheira
  */
 public class Pointdelivraison {
     private String nom;
-    //private Arraylist listecolis;
+    private ArrayList<Colis> listecolis;
     private Adresse adresse;
     
     public Pointdelivraison(String nom, Adresse adresse){
         this.nom = nom;
-       // this.listecolis = listecolis;
+       this.listecolis = new ArrayList<Colis>();
         this.adresse = adresse;
 }
-
-}
+public void ajoutercolis(Colis colis){ 
+    listecolis.add(colis);
+    
+    
+}}
